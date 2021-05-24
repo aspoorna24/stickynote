@@ -1,0 +1,28 @@
+ {% extends 'base.html' %}
+
+ {% block body %}
+ <h2 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">SIGN UP</h2>
+    
+    
+      <div class="d-flex justify-content-center">
+        <form action="/" method='POST' style="box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19); padding: 2%;">
+   <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Email id</label>
+    <input type="Email" class="form-control" name='email' required ><br>
+    </div>
+   <div class = "mb-3">
+  <label for="fname">User Name:</label><br>
+  <input type="text" class="form-control" id="fname" name="user" required><br>
+  </div>
+   <div class = "mb-3">
+  <label for="lname">Password:</label><br>
+  <input type="Password" class="form-control" id="lname" name="passw" required><br>
+  </div>
+   <div class = "mb-3">
+           <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+        </div>
+
+</form>     
+</div>
+ <p style="text-align: center;">Click here to <a href="/login" style="color: green;">Login</a> </p>
+ {% endblock %}
